@@ -1,0 +1,23 @@
+{
+  "name": "jwt-locker",
+  "version": "0.1.0",
+  "description": "Secure and user-friendly jwt storage and auth flows for the browser",
+  "main": "index.ts",
+  "types": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twfarland/jwt-locker.git"
+  },
+  "keywords": [
+    "jwt"
+  ],
+  "author": "Tim Farland",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/twfarland/jwt-locker/issues"
+  },
+  "homepage": "https://github.com/twfarland/jwt-locker#readme"
+}
