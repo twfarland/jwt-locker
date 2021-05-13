@@ -2,7 +2,7 @@
 
 ### For secure and user-friendly client-side jwt auth flows.
 
-I made this library because I've come into many projects that get browser side usage of jwt wrong, both in security and in UX. People are storing tokens in localStorage, which is prone to xss attacks, and refresh token handling is often fumbled. Even AWS's own Amplify library doesn't get it right as of now.
+I made this library because I've come into many projects that get browser side usage of jwt wrong regarding both security UX. People are storing tokens in localStorage, which is prone to xss attacks, and refresh token handling is often fumbled. Even AWS's own Amplify library doesn't get it right as of now.
 
 I read this excellent article: [The Ultimate Guide to handling JWTs on frontend clients (GraphQL)](https://hasura.io/blog/best-practices-of-using-jwt-with-graphql) and have adapted its recommendations to be transport layer agnostic.
 
