@@ -19,15 +19,16 @@ Features
 - Seamless silent refresh
 - During token refresh, outbound calls will be delayed until refresh is finished
 - Auth api can be separated from protected apis
-- Support short-lived jwt tokens with long-lived refresh tokens
+- Supports short-lived jwt tokens with long-lived refresh tokens
+- Logout is synched across multiple tabs
 
-Examples
+Examples @todo
 
 - Axios basic
 - Axios / React
 - Axios / Svelte
 
-Related repos
+Related repos @todo
 
 - Reference server
 - Axios adapter
