@@ -12,7 +12,7 @@ Even AWS's own Amplify library doesn't get it right as of now, and I constantly 
 
 I read this excellent article: [The Ultimate Guide to handling JWTs on frontend clients (GraphQL)](https://hasura.io/blog/best-practices-of-using-jwt-with-graphql) and have adapted its recommendations to be transport layer agnostic.
 
-To use this library, you pass it your implementation of login, logout, signup, and refresh token functions, and specify your auth api, and and apis that consume the auth. jwt-locker will wire it all up so the correct auth state is in play, refreshed silently behind the scenes. I've built it with [Axios](https://github.com/axios/axios) in mind, but it would be easy to add other adapters.
+To use this library, you pass it your implementation of login, logout, signup, and refresh token functions, and specify your auth api, and and apis that consume the auth. jwt-locker will wire it all up so the correct auth state is in play, refreshed silently behind the scenes. I've built it with [Axios](https://github.com/twfarland/jwt-locker-axios) in mind, but it would be easy to add other adapters.
 
 Certain assumptions about the serverside implementation are made. For example you will need the login endpoint to set a refresh token cookie, and the refresh token endpoint will need to read from it. See this reference server implementation for more info (@todo).
 
