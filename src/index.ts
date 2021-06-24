@@ -60,6 +60,9 @@ export default function jwtConnect<ApiInstance>({
       tokenSet = await refreshToken();
       unBindApis = bindApis();
     } catch (err) {
+      if (unBindApis) {
+        unBindApis();
+      }
       redirectToLogin();
     }
     refreshing = false;
